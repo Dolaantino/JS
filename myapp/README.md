@@ -8,3 +8,4 @@
 ### make install для установки зависимостей
 ### make start для запуска
 ### make clean для чистки
+### make restart для ребилдинга (цели clean install start)
