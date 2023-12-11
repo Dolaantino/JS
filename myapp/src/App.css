@@ -1,0 +1,157 @@
+/* App.css */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #808080;
+}
+
+/* App.css */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.page-gray {
+  background-color: #808080; /* Серый фон для первой странички */
+}
+
+.page-white {
+  background-color: #ffffff; /* Белый фон для второй странички */
+}
+
+/* ... (остальные стили) */
+
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.error-message {
+  position: absolute;
+  width: 611px;
+  height: 27px;
+  top: 68px;
+  left: 415px;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff; /* Белый цвет текста */
+  background-color: #FF6565; /* Красная заливка */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.white-window {
+  position: center;
+  width: 823px;
+  height: 367px;
+  top: 328px;
+  left: 309px;
+  background-color: #ffffff; /* Белый цвет фона окна */
+  border-radius: 10px; /* Закругление углов окна */
+  padding: 20px; /* Добавление отступов внутри окна, при необходимости */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень для окна */
+}
+
+.upload-text {
+  position: absolute;
+  width: 362px;
+  height: 33px;
+  top: 310px;
+  left: 539px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center; /* Центрирование текста по горизонтали */
+  line-height: 32.69px; /* Выравнивание текста по вертикали в центре блока */
+  white-space: nowrap;
+}
+
+.upload-button {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff; /* Белый цвет текста */
+}
+
+.upload-file-button {
+  width: 274px;
+  height: 48px;
+  top: 535px;
+  left: 583px;
+  border-radius: 5px;
+  background-color: #6346B4; /* Фиолетовая заливка */
+}
+
+.upload-file-button:hover {
+  background-color: #A88EF0;
+}
+
+.upload-file-button:active {
+  background-color: #311F63;
+}
+
+.load-new-file-container {
+  position: absolute;
+  top: 20px; /* Регулируйте значение, чтобы сместить кнопку вверх или вниз */
+  right: 20px; /* Регулируйте значение, чтобы сместить кнопку вправо или влево */
+}
+
+.load-new-file-button {
+  width: 164px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: #6346B4; /* Фиолетовая заливка */
+  color: #ffffff; /* Белый цвет текста */
+  /* margin-top: 10px; */
+  cursor: pointer;
+  border: none;
+  /* margin-left: auto; */
+}
+
+.upload-container {
+  text-align: center;
+}
+
+
+.table-container {
+  width: 1407px;
+  height: 951px;
+  position: absolute;
+  top: 73px;
+  left: 33px;
+  background-color: white;
+  border-radius: 10px 0 0 0;
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
