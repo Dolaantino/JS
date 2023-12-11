@@ -1,4 +1,3 @@
-
 SRC_DIR = src
 
 all: install start
@@ -9,11 +8,10 @@ install:
 start:
 	cd $(SRC_DIR) && npm start
 
-build:
-	cd $(SRC_DIR) && npm run build
-
 clean:
-	rm -rf $(SRC_DIR)/build $(SRC_DIR)/node_modules
+	rm -rf package-lock.json node_modules
 
-.PHONY: all install start build clean
+.PHONY: all install start clean
 
+.error:
+	cd $(SRC_DIR) && npm audit fix --force && npm start || true
