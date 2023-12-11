@@ -11,7 +11,9 @@ start:
 clean:
 	rm -rf package-lock.json node_modules
 
-.PHONY: all install start clean
+restart: clean install start
+
+.PHONY: all install start clean restart
 
 .error:
 	cd $(SRC_DIR) && npm audit fix --force && npm start || true
